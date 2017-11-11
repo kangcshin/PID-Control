@@ -1,0 +1,4 @@
+Describe the effect each of the P, I, D components had in your implementation: 
+	P(Proportional) is the value that effects the steering of the vehicle. The distance from the vehicle to the center of the lane determines how much of a steer the vehicle takes towards the center of the lane. I(Integral) is the value that can be set to go against the systematic bias of CTE. It helps the vehicle keep middle of the lane. D(Differential) is the value that helps P from going too much over the middle of the lane.
+Describe how the final hyperparameters were chosen: 
+	it was done through manual tuning with twiddle, but mostly manual. This is because the twiddle seemed to help with adjusting the values but as the laps went on, it started to give out values that made the vehicle drive off the track.
